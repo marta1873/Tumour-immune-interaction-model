@@ -26,11 +26,11 @@ The function returns:
 - nC_matrix: list of arrays of the cancer cell densities at each phenotype for each time-step
 - nT_matrix: list of arrays of the T-cell densities at each phenotype for each time-step
 - u_vector: an array containing $(u_1, u_2, \dotsc, u_l)$ (which are the lattice points of the discretisation of $[-L,L]$)
-- time_vector: list containing the different times at which the model is evaluated.
+- time_vector: list containing the different times at which the model is evaluated
 
 The value of $\eta$ should be kept fixed to $\eta = 2L$ unless using the original version of the model, where not all cancer cells and T-cells will bind.
 
-The function matrix_exponential_dist can be used to generate the elements of the interaction matrix $\Gamma$ via an exponential distribution. A suggestion of parameter for interaction_matrix_model is included to run the model at the end of the file. 
+The function matrix_exponential_dist can be used to generate the elements of the interaction matrix $\Gamma$ via an exponential distribution. A suggestion of parameter for interaction_matrix_model is included to run the model at the end of the file.
 
 ## References
 <a id="1">[1]</a> 
