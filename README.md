@@ -6,21 +6,21 @@ The code provided in model.py is a simulation of the interaction between the can
 
 The function interaction_matrix_model implements the model by taking as inputs the following parameter values:
 - $L$: the interval $[-L,L]$ defines the space where we model the densities
-- $l$: number of points in the lattice used to discretise $[-L,L]$
-- $\tau$: time-step
-- $t_f$: final time of simulation
+- $l-1$ (num_subintervals_lattice): number of subintervals in the lattice used to discretise $[-L,L]$
+- $\tau$ (tau): time-step
+- $t_f$ (final_time): final time of simulation
 - $a$ and $A$: used to define initial conditions via $n^0_C(u_i) = 10^4(1 + a \cos (Au_i))$ and $n^0_T(v_j) = 10^4(2 + a \cos (Av_j))$
-- $\theta_C$: intra-population competition range of cancer cells
-- $\theta_T$: intra-population competition ranges of T-cells
-- $\eta$: binding distance between cancer cells and T-cells in $[-L,L]$
-- $\alpha_C$: cancer cell division rate
-- $\mu_C$: intra-population competition death rate of cancer cells
-- $\zeta_C$: cancer cell death rate due to binding
-- $\alpha_T$: T-cell division rate
-- $\mu_T$: intra-population competition death rate of T-cells
-- $\zeta_T$: T-cell birth rate due to binding
-- $\Gamma$: interaction matrix of binding affinities between cancer cells and T-cells
-- $\lambda_C$: relating to how fast cancer cells can mutate across $[-L,L]$
+- $\theta_C$ (theta_c): intra-population competition range of cancer cells
+- $\theta_T$ (theta_t): intra-population competition ranges of T-cells
+- $\eta$ (eta): binding distance between cancer cells and T-cells in $[-L,L]$
+- $\alpha_C$ (alpha_c): cancer cell division rate
+- $\mu_C$ (mu_c): intra-population competition death rate of cancer cells
+- $\zeta_C$ (zeta_c): cancer cell death rate due to binding
+- $\alpha_T$ (alpha_t): T-cell division rate
+- $\mu_T$ (mu_t): intra-population competition death rate of T-cells
+- $\zeta_T$ (zeta_t): T-cell birth rate due to binding
+- $\Gamma$ (gamma_matrix): interaction matrix of binding affinities between cancer cells and T-cells
+- $\lambda_C$ (lambda_c): relating to how fast cancer cells can mutate across $[-L,L]$
 
 The function returns:
 - nC_matrix: list of arrays of the cancer cell densities at each phenotype for each time-step
