@@ -272,7 +272,7 @@ def interaction_matrix_model(L, num_subintervals_lattice, time_step, final_time,
     nC_matrix: list of arrays, each array contains the cancer cell densities across the lattice at a time-step
     nT_matrix: list of arrays, each array contains the T-cell densities across the lattice at a time-step
     u_vector: array containing points in lattice
-    tine_vector: array containing all the time points at which the densities are evaluated
+    time_vector: array containing all the time points at which the densities are evaluated
     '''
     # Calculate spatial step
     spatial_step = 2 * L / num_subintervals_lattice
