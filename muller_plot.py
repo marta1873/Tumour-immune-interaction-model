@@ -74,7 +74,7 @@ def create_parent_df(matrix):
 def muller_plot(nC, time_vector):
     '''
     Args
-    matrix: list of arrays, each array contains the cancer cell densities across the lattice at a time-step
+    nC: list of arrays, each array contains the cancer cell densities across the lattice at a time-step
     time_vector: array containing all the time points at which the densities are evaluated
     '''
     # Convert list of arrays to 2-d array
